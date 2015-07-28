@@ -1,0 +1,70 @@
+.clear {
+	clear:both;
+}
+
+.maze-space {
+	width:30px;
+	height:30px;
+	border:1px solid #eaeaea;
+	float:left;
+}
+
+div.north {
+	border-top: 1px solid black;
+}
+
+div.north-2 {
+	border-top: 2px solid black;
+}
+
+div.east {
+	border-right: 1px solid black;
+}
+
+div.east-2 {
+	border-right: 2px solid black;
+}
+
+div.south {
+	border-bottom: 1px solid black;
+}
+
+div.south-2 {
+	border-bottom: 2px solid black;
+}
+
+div.west {
+	border-left: 1px solid black;
+}
+
+div.west-2 {
+	border-left: 2px solid black;
+}
+
+div.player-north {
+	background:url(player-20-north.png) no-repeat center center;
+}
+
+div.player-east {
+	background:url(player-20-east.png) no-repeat center center;
+}
+
+div.player-south {
+	background:url(player-20-south.png) no-repeat center center;
+}
+
+div.player-west {
+	background:url(player-20-west.png) no-repeat center center;
+}
+
+div.target {
+	background:url(target-20.png) no-repeat center center;
+}
+
+div.ghost-east {
+	background:url(ghost-20-east.png) no-repeat center center;	
+}
+
+div.ghost-west {
+	background:url(ghost-20-west.png) no-repeat center center;	
+}

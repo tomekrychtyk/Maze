@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="robot.js"></script>
+		<script src="player.js"></script>
+		<script src="maze.js"></script>
+		<script src="maze-space.js"></script>
+		<script src="ghost.js"></script>
+		<script src="maze-interface.js"></script>
+
+		<script>
+			var m = new Maze({
+				width: 10,
+				height: 10,
+				startX: 1,
+				startY: 1,
+				endX: 10,
+				endY: 10,
+				startOrientation: "east"
+			});
+
+			var ghosts = [];
+			ghosts.push(new Ghost(5, 6, "east", m));
+			ghosts.push(new Ghost(3, 8, "west", m));
+			ghosts.push(new Ghost(10, 1, "west", m));
+
+			var p = new Player();
+			p.setMaze(m);
+
+		</script>
+		<script src="level01.js"></script>
+
+		<link href="maze.css" type="text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="maze">
+
+		</div>
+	</body>
+	<script>
+			var i = new mazeInterface(m, p, ghosts);
+			i.render();
+			i.bindEvents();
+	</script>
+</html>
